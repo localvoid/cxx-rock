@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include <rock/utils.h>
+#include <rock/utils.hpp>
 
 namespace {
 

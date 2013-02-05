@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include <rock/chain.h>
-#include <rock/utils.h>
+#include <rock/chain.hpp>
+#include <rock/utils.hpp>
 
 
 class MyClass {

@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include <rock/list.h>
-#include <rock/utils.h>
+#include <rock/list.hpp>
+#include <rock/utils.hpp>
 
 
 class MyClass {
