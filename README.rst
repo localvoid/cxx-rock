@@ -46,6 +46,7 @@ push_front    O(1)
 pop_front     O(1)
 pop_back      O(1)
 erase         O(1)
+============= ==========
 
 Example
 ^^^^^^^
@@ -83,6 +84,7 @@ Operation     Complexity
 push          O(1)
 pop           O(1)
 erase         O(1)
+============= ==========
 
 
 Example
@@ -119,6 +121,7 @@ Operation     Complexity
 ============= ==========
 push          O(1)
 pop           O(1)
+============= ==========
 
 Example
 ^^^^^^^
@@ -155,6 +158,7 @@ Operation     Complexity
 ============= ==========
 push          O(1)
 pop           O(1)
+============= ==========
 
 
 Example
