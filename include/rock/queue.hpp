@@ -1,5 +1,5 @@
-#ifndef _ROCK_QUEUE_H_
-#define _ROCK_QUEUE_H_
+#ifndef _ROCK_QUEUE_HPP_
+#define _ROCK_QUEUE_HPP_
 
 /*
   Intrusive Queue

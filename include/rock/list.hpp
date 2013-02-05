@@ -1,5 +1,5 @@
-#ifndef _ROCK_LIST_H_
-#define _ROCK_LIST_H_
+#ifndef _ROCK_LIST_HPP_
+#define _ROCK_LIST_HPP_
 
 /*
   Intrusive List
@@ -20,7 +20,7 @@ public:
   list_node(const list_node&) = delete;
   list_node &operator=(const list_node&) = delete;
 
-  list_node() {}
+  list_node() noexcept {}
 
   ~list_node() {
     unlink();
@@ -68,21 +68,26 @@ public:
   list_base(const list_base&) = delete;
   list_base &operator=(const list_base&) = delete;
 
-  bool empty() const noexcept { return next_ == this; }
+  bool empty() const noexcept {
+    return next_ == this;
+  }
 
 protected:
   void push_front(list_node &n) noexcept {
     prepend_(n);
   }
+
   void push_back(list_node &n) noexcept {
     append_(n);
   }
+
   list_node &pop_front() noexcept {
     assert(!empty());
     list_node *first = next_;
     first->unlink();
     return *first;
   }
+
   list_node &pop_back() noexcept {
     assert(!empty());
     list_node *last = prev_;
@@ -94,6 +99,7 @@ protected:
     assert(!empty());
     return *next_;
   }
+
   list_node &back() const noexcept {
     return *prev_;
   }
@@ -114,7 +120,7 @@ public:
   ListIterator &operator++() noexcept {
     node_ = node_->next_;
     return *this;
-  } 
+  }
 
   ListIterator operator++(int) noexcept {
     ListIterator result(*this);
@@ -176,7 +182,7 @@ public:
   list &operator=(const list&) = delete;
 
 
-  list() : list_base() {}
+  list() noexcept : list_base() {}
 
 
   iterator begin() noexcept {
@@ -195,7 +201,7 @@ public:
   iterator rbegin() noexcept {
     return reverse_iterator(prev_);
   }
-  iterator rend() noexcept {
+  iterator rend() -> iterator noexcept {
     return reverse_iterator(this);
   }
   const_iterator crbegin() const noexcept {

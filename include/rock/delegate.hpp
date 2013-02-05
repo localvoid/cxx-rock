@@ -1,5 +1,5 @@
-#ifndef _ROCK_DELEGATE_H_
-#define _ROCK_DELEGATE_H_
+#ifndef _ROCK_DELEGATE_HPP_
+#define _ROCK_DELEGATE_HPP_
 
 /*
   Lightweight delegates (size of 2 pointers)

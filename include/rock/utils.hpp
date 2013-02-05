@@ -1,5 +1,5 @@
-#ifndef _ROCK_UTILS_H_
-#define _ROCK_UTILS_H_
+#ifndef _ROCK_UTILS_HPP_
+#define _ROCK_UTILS_HPP_
 
 
 #include <cstddef>

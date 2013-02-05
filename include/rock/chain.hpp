@@ -1,5 +1,5 @@
-#ifndef _ROCK_CHAIN_H_
-#define _ROCK_CHAIN_H_
+#ifndef _ROCK_CHAIN_HPP_
+#define _ROCK_CHAIN_HPP_
 
 /*
   Intrusive chain (Stack)

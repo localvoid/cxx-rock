@@ -1,5 +1,5 @@
-#ifndef _ROCK_STACK_H_
-#define _ROCK_STACK_H_
+#ifndef _ROCK_STACK_HPP_
+#define _ROCK_STACK_HPP_
 
 /*
   Intrusive stack
