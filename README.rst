@@ -25,7 +25,7 @@ Example
     };
 
     Item i;
-    int &x = Item::x_dmp::to_member(&i);
+    int *x = Item::x_dmp::to_member(&i);
 
 Containers
 ==========
