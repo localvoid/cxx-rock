@@ -22,10 +22,6 @@ public:
 
   list_node() noexcept {}
 
-  ~list_node() {
-    unlink();
-  }
-
   void unlink() noexcept {
     next_->prev_ = prev_;
     prev_->next_ = next_;
